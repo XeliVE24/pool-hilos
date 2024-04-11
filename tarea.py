@@ -2,7 +2,7 @@
 import time 
 import logging
 from concurrent.futures import ThreadPoolExecutor
-
+logging.basicConfig(level=logging.DEBUG,format='%(threadName)s:%(message)s')
 def contadorDos(inicio,fin):
     logging.info(f'funcion con rango:{inicio}-{fin}')
     for i in range(inicio,fin+1,1):
